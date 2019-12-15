@@ -1,0 +1,8 @@
+{
+  "extends": ["airbnb"],
+  "rules": {
+    "func-names": ["error","never"],
+    "max-len": [2, 140, 2, {"ignoreUrls": true}],
+    "no-underscore-dangle": ["error", { "allowAfterThis": true }]
+  }
+}
