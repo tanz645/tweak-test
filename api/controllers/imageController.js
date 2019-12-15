@@ -13,7 +13,7 @@ const { uploadImage, getImage, storeImageMetaData } = require('../../lib/service
 const uploadController = async (image) => {
   try {
     const result = await uploadImage(image);
-    storeImageMetaData(image)
+    await storeImageMetaData(image);
     return Promise.resolve(result);
   } catch (e) {
     return Promise.reject('Upload unsuccessful');
