@@ -50,12 +50,12 @@ Response: {String} - Token
 Method: POST
 Body: {FORM-DATA}
 ```
-image: <filea>}
+image: <filea>
 ```
 Header: 
 
 ```
-Authorization: <Token>}
+Authorization: <Token>
 ```
 
 #### Retrieve:
@@ -70,7 +70,12 @@ fileName=''
 Header: 
 
 ```
-Authorization: <Token>}
+Authorization: <Token>
 ```
 
 Response: {JSON} - Image data
+
+## Test:  run
+```
+jest
+```
